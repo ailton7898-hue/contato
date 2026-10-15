@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ailton Couto — Vendas + Agentes de IA</title>
+<meta name="description" content="Fale comigo no WhatsApp. Agentes de IA para vendas em empresas de Mato Grosso.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ailton Couto — Vendas + Agentes de IA para empresas de Mato Grosso">
+<meta property="og:description" content="Fale comigo no WhatsApp.">
+<style>
+:root { --navy:#0b1f3a; --navy2:#14305a; --green:#1fb36b; --gold:#f2b134; --ink:#e8f0fb; }
+* { box-sizing:border-box; }
+body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px 16px; background:linear-gradient(155deg,var(--navy),var(--navy2) 60%,#1d4a8a); color:var(--ink); font-family:"Segoe UI",Arial,sans-serif; }
+.card { width:100%; max-width:420px; text-align:center; }
+.av { width:92px; height:92px; border-radius:50%; margin:0 auto 18px; background:rgba(255,255,255,.1); border:2px solid rgba(255,255,255,.3); display:flex; align-items:center; justify-content:center; font-size:32px; font-weight:700; color:#fff; }
+h1 { font-size:26px; line-height:1.15; margin:0 0 6px; color:#fff; }
+.sub { font-size:15px; color:#b9d0ee; margin:0 0 22px; }
+.sub b { color:var(--gold); }
+.btn { display:block; background:var(--green); color:#fff; text-decoration:none; font-weight:700; font-size:18px; padding:16px 20px; border-radius:14px; box-shadow:0 6px 18px rgba(0,0,0,.25); }
+.btn:active { transform:scale(.98); }
+ul { list-style:none; padding:0; margin:22px 0 0; font-size:14.5px; color:#d3e3f8; text-align:left; }
+li { padding:8px 0 8px 26px; position:relative; border-top:1px solid rgba(255,255,255,.12); }
+li:before { content:"✓"; position:absolute; left:2px; color:var(--green); font-weight:800; }
+.nota { margin-top:18px; font-size:11.5px; color:#8fb0da; }
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="av">AC</div>
+  <h1>Ailton Couto</h1>
+  <p class="sub">Vendas + <b>Agentes de IA</b> para empresas de Mato Grosso</p>
+  <a id="wa" class="btn" href="https://wa.me/5565996962104?text=Oi%2C%20vim%20pelo%20seu%20perfil%20do%20LinkedIn">Falar comigo no WhatsApp</a>
+  <ul>
+    <li>7+ anos em vendas B2B</li>
+    <li>Agentes de IA que respondem, qualificam e agendam</li>
+    <li>Atendimento direto comigo</li>
+  </ul>
+  <p class="nota">Ao clicar, o WhatsApp abre com uma mensagem pronta. A mensagem indica de qual publicação você veio.</p>
+</main>
+<script>
+  var NUMERO = "5565996962104";
+  var p = new URLSearchParams(location.search).get("p");
+  var ok = p && /^[A-Za-z0-9_-]{1,12}$/.test(p);
+  var texto = ok ? "Oi, vim pelo post " + p : "Oi, vim pelo seu perfil do LinkedIn";
+  document.getElementById("wa").href = "https://wa.me/" + NUMERO + "?text=" + encodeURIComponent(texto);
+</script>
+</body>
+</html>
